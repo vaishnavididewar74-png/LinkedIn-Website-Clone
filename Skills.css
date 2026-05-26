@@ -1,0 +1,1875 @@
+body{
+	background-color:#F3F0E8;
+	position:relative;
+	overflow-x:hidden;
+	left:0%;
+	right:0%;
+}
+#LinkedIn{
+	position:relative;
+}
+header{
+	background-color:white;
+	top:0;
+	left:0;
+	right:0;
+	position:fixed;
+	z-index:5;
+}
+#Logo{
+	height:1cm;
+	width:1cm;
+	border-radius:3px;
+	position:relative;
+}
+ul li{
+	list-style-type:none;
+}
+#Nav{
+	display:flex;
+	position:relative;
+	height:0.7cm;
+	justify-content:space-between;
+}
+#Nav-section{
+	scrollbar-width:none;
+}
+#Nav > #Logo-Search{
+	display:flex;
+	position:relative;
+	gap:10px;
+	background-color:white;
+	margin-right:0.8cm;
+}
+#Nav #Logo-sec{
+	text-decoration:none;
+	margin-top:-0.1cm;
+	margin-left:-0.6cm;
+}
+@media screen and (min-width:960px){
+	#Nav > #Nav-section{
+		justify-content:space-between;
+		
+	}
+}
+	#Nav #Search{
+		height:0.8cm;
+		width:5cm;
+		padding-top:0.1cm;
+		border-radius:20px;
+		border:1px solid grey;
+		position:relative;
+		display:flex;
+		margin-top:-0.1cm;
+	}
+	#Nav #Search:hover{
+		background-color:#f5f5f5;
+	}
+	#Nav #Location{
+		height:0.8cm;
+		width:5cm;
+		padding-top:0.1cm;
+		border-radius:20px;
+		border:1px solid grey;
+		position:relative;
+		display:flex;
+		margin-top:-0.1cm;
+	}
+	#Nav #Location:hover{
+		background-color:#f5f5f5;
+	}
+	#Search #Search-in{
+		border:none;
+		outline:none;
+		position:relative;
+		margin-left:0cm;
+		width:4cm;
+		height:0.8cm;
+		padding-left:0.2cm;
+		margin-top:-0.1cm;
+		border-radius:30px;
+	}
+	#Location #Loc-in{
+		border:none;
+		outline:none;
+		position:relative;
+		margin-left:0cm;
+		width:4cm;
+		height:0.8cm;
+		padding-left:0.2cm;
+		margin-top:-0.1cm;
+		border-radius:30px;
+	}
+	#Search #Search-in:hover{
+		background-color:#f5f5f5;
+	}
+	#Location #Loc-in:hover{
+		background-color:#f5f5f5;
+	}
+#Search #Search-sym{
+	color:grey;
+	position:relative;
+	margin-left:0.3cm;
+	font-weight:bold;
+	margin-top:0.1cm;
+}
+#Location #Loc-sym{
+	color:grey;
+	position:relative;
+	margin-left:0.3cm;
+	font-weight:bold;
+	margin-top:0.1cm;
+}
+#Logo-Search #Search-Big-sym{
+	color:grey;
+	position:relative;
+	margin-left:0.3cm;
+	font-size:70px;
+	font-weight:bold;
+	margin-top:-1cm;
+}
+#Logo-Search #Loc-Big-sym{
+	color:grey;
+	position:relative;
+	margin-left:0.3cm;
+	font-size:70px;
+	font-weight:bold;
+	margin-top:-1cm;
+}
+
+#Nav > #Nav-section{
+	display:flex;
+	justify-content:space-around;
+	gap:25px;
+}
+@media screen and (max-width:990px){
+	#Nav > #Nav-section{
+		margin-top:0.2cm;
+		gap:3vw;
+	}
+	#Nav{
+		gap:1vw;
+	}
+	#Nav #Logo-Search{
+		gap:3vw;
+	}
+	#Nav #Search{
+		display:none;
+	}
+	#Nav #Location{
+		display:none;
+	}
+	#Nav > #Nav-section > #home-sec{
+		margin-top:0.3cm;
+	}
+	#Nav > #Nav-section > #vert{
+		display:none;
+	}
+}
+@media screen and (min-width:990px){
+	#Logo-Search #Search-Big-sym{
+		display:none;
+	}
+	#Nav > #Nav-section > #vert{
+		display:none;
+	}
+	#Logo-Search #Loc-Big-sym{
+		display:none;
+	}
+}
+#Nav{
+	scrollbar-width:none;
+}
+
+@media screen and (min-width:770px) and (max-width:990px){
+	#Nav > #Nav-section{
+		gap:5%;
+		width:100%;
+	}
+	#Nav{
+		gap:6%;
+		width:100%;
+	}
+	#Nav #Logo-Search{
+		gap:30%;
+	}
+}
+@media screen and (min-width:150px) and (max-width:770px){
+	#Nav > #Nav-section{
+		gap:10%;
+		width:100%;
+	}
+	#Nav{
+		gap:10%;
+		width:100%;
+		padding-top:2vw;
+	}
+	#Nav #Logo-Search{
+		gap:50%;
+	}
+	#Nav > #Nav-section > #home-sec{
+		margin-left:1em;
+	}
+}
+#Nav > #Nav-section > #home-sec{
+	margin-top:-0.1cm;
+	position:relative;
+	margin-right:25px;
+}
+#Nav > #Nav-section > #home-sec > a{
+	font-size:25px;
+	color:grey;
+	position:absolute;
+	text-decoration:none;
+}
+#Nav > #Nav-section > #home-sec > a:hover{
+	color:black;
+}
+/*Home Nav-section*/
+#home-sec #toggleIcon1{
+    display: none;
+  }
+
+  /* Container for the SVGs */
+ #home-sec label {
+    cursor: pointer;
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+  }
+
+  /* Default SVG (shown when unchecked) */
+ #home-sec #home1 {
+    display: block;
+  }
+#home-sec #home2 {
+    display: none;
+  }
+
+  /* When checkbox is checked, swap icons */
+ #home-sec #toggleIcon1:checked + label #home1 {
+    display: none;
+  }
+ #home-sec #toggleIcon1:checked + label #home2 {
+    display: block;
+  }
+
+#Nav > #Nav-section > #team-sec{
+	margin-top:-0.1cm;
+	position:relative;
+}
+#Nav > #Nav-section > #team-sec > a{
+	font-size:25px;
+	color:grey;
+	position:absolute;
+	text-decoration:none;
+}
+#Nav > #Nav-section > #team-sec > a:hover{
+	color:black;
+}
+/*People Nav-section*/
+#team-sec #toggleIcon2{
+    display: none;
+  }
+
+  /* Container for the SVGs */
+ #team-sec label {
+    cursor: pointer;
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+  }
+
+  /* Default SVG (shown when unchecked) */
+ #team-sec #team1 {
+    display: block;
+  }
+#team-sec #team2 {
+    display: none;
+  }
+
+  /* When checkbox is checked, swap icons */
+ #team-sec #toggleIcon2:checked + label #team1 {
+    display: none;
+  }
+ #team-sec #toggleIcon2:checked + label #team2 {
+    display: block;
+  }
+  
+#Nav > #Nav-section > #skills-sec{
+	margin-top:-0.1cm;
+	margin-right:25px;
+	margin-left:25px;
+	position:relative;
+}
+#Nav > #Nav-section > #skills-sec > a{
+	font-size:25px;
+	color:grey;
+	position:absolute;
+	text-decoration:none;
+}
+#Nav > #Nav-section > #skills-sec > a:hover{
+	color:black;
+}
+/*Purse Nav-section*/
+#skills-sec #toggleIcon3{
+    display: none;
+  }
+
+  /* Container for the SVGs */
+ #skills-sec label {
+    cursor: pointer;
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+  }
+
+  /* Default SVG (shown when unchecked) */
+ #skills-sec #skills1 {
+    display: block;
+  }
+#skills-sec #skills2 {
+    display: none;
+  }
+
+  /* When checkbox is checked, swap icons */
+ #skills-sec #toggleIcon3:checked + label #skills1 {
+    display: none;
+  }
+ #skills-sec #toggleIcon3:checked + label #skills2 {
+    display: block;
+  }
+ 
+
+#Nav > #Nav-section > #mess-sec{
+	margin-top:-0.1cm;
+	position:relative;
+}
+#Nav > #Nav-section > #mess-sec > a{
+	font-size:25px;
+	color:grey;
+	position:relative;
+	text-decoration:none;
+}
+#Nav > #Nav-section > #mess-sec > a:hover{
+	color:black;
+}
+/*Mess Nav-section*/
+#mess-sec #toggleIcon4{
+    display: none;
+  }
+
+  /* Container for the SVGs */
+ #mess-sec label {
+    cursor: pointer;
+    display: inline-block;
+    width: 30px;
+    height: 50px;
+  }
+
+  /* Default SVG (shown when unchecked) */
+ #mess-sec #mess1 {
+    display: block;
+  }
+#mess-sec #mess2 {
+    display: none;
+  }
+
+  /* When checkbox is checked, swap icons */
+ #mess-sec #toggleIcon4:checked + label #mess1 {
+    display: none;
+  }
+ #mess-sec #toggleIcon4:checked + label #mess2 {
+    display: block;
+  }
+
+#Nav > #Nav-section > #noti-sec{
+	margin-top:-0.1cm;
+	position:relative;
+}
+#Nav > #Nav-section > #noti-sec > a{
+	font-size:25px;
+	color:grey;
+	position:relative;
+	text-decoration:none;
+}
+#Nav > #Nav-section > #noti-sec > a:hover{
+	color:black;
+}
+/*Notification Nav-section*/
+#noti-sec #toggleIcon5{
+    display: none;
+  }
+
+  /* Container for the SVGs */
+ #noti-sec label {
+    cursor: pointer;
+    display: inline-block;
+    width: 30px;
+    height: 50px;
+  }
+
+  /* Default SVG (shown when unchecked) */
+ #noti-sec #noti1 {
+    display: block;
+  }
+#noti-sec #noti2 {
+    display: none;
+  }
+
+  /* When checkbox is checked, swap icons */
+ #noti-sec #toggleIcon5:checked + label #noti1 {
+    display: none;
+  }
+ #noti-sec #toggleIcon5:checked + label #noti2 {
+    display: block;
+  }
+
+#Nav > #Nav-section > #V-sec{
+	position:relative;
+	margin-top:0cm;
+}
+#Nav > #Nav-section > #V-sec > #V-circle{
+	font-size:15px;
+	position:relative;
+	color:white;
+	font-family: 'Noto Sans', sans-serif;
+	text-decoration:none;
+	border-radius:100px;
+	background-color:purple;
+	padding:0.1cm 0.19cm;
+} 
+#Nav > #Nav-section > #vert{
+	height:1.5cm;
+	background-color:#F0EFE7;
+	width:0.1px;
+	margin-top:-0.4cm;
+	position:relative;
+}
+#Nav > #Nav-section > #apps-sec{
+	position:relative;
+	margin-top:-0.1cm;
+}
+#Nav > #Nav-section > #apps-sec > a{
+	font-size:25px;
+	color:grey;
+	position:relative;
+	text-decoration:none;
+}
+#Nav > #Nav-section > #apps-sec > a:hover{
+	color:black;
+}
+#Nav > #Nav-section > #premi-sec{
+	position:relative;
+	display:flex;
+	flex-wrap:nowrap;
+	margin-top:-0.2cm;
+	margin-right:25px;
+}
+#Nav > #Nav-section > #premi-sec > center > a{
+	position:relative;
+	text-decoration:none;
+	color:grey;
+	font-size:11.5px;
+	font-family: 'Noto Sans', sans-serif;
+}
+#Nav > #Nav-section #premi{
+	height:0.6cm;
+	width:0.6cm;
+	position:relative;
+	margin-bottom:-0.3cm;
+}
+@media screen and (max-width:770px){
+	#Nav > #Nav-section{
+		width:13cm;
+		margin:auto;
+		overflow-x:scroll;
+	}
+	#Search #Search-in{
+		border:none;
+		outline:none;
+		position:relative;
+		margin-left:0cm;
+		width:6.1cm;
+		height:0.8cm;
+		padding-left:0.2cm;
+		margin-top:-0.1cm;
+		border-radius:30px;
+	}
+}
+#LinkedIn > #Skills{
+	position:relative;
+	
+}
+
+/*Column1*/
+@media screen and (min-width:990px){
+	#Skills{
+		display:flex;
+		justify-content:around;
+		margin-top:1.8cm;
+		font-family: 'Noto Sans', sans-serif;
+		margin-left:5.5vmax;
+	}
+	#Column1{
+		position:relative;
+		margin-top:0.5cm;
+	}
+	#Col1-Top1{
+		background-color:white;
+		width:30vw;
+		height:auto;
+		border:1px solid lightgrey;
+		border-radius:10px;
+	}
+	#Nav-section{
+		position:relative;
+		padding-top:0.2cm;
+	}
+	#v-profi{
+		border-radius:100px;
+		position:relative;
+		height:2.1cm;
+		margin-left:0.5cm;
+		margin-right:0.5cm;
+		margin-top:1cm;
+	}
+	#back{
+		background-image:url('https://wallpapers.com/images/featured/profile-background-b5vedq7mz8mjvslu.jpg');
+		background-repeat:no-repeat;
+		background-size:cover;
+		height:1.8cm;
+		border-radius:10px 10px 0px 0px;
+	}
+	#Col1-Top1 > h2{
+		position:relative;
+		margin-top:1.6cm;
+		font-size:19px;
+		margin-left:0.5cm;
+		margin-right:0.5cm;
+	}
+	#Col1-Top1 > #stu{
+		font-size:12px;
+		position:relative;
+		margin-left:0.5cm;
+		margin-top:-0.4cm;
+		margin-right:0.5cm;
+	}
+	#Col1-Top1 > #pune{
+		font-size:12px;
+		position:relative;
+		color:grey;
+		margin-left:0.5cm;
+		margin-right:0.5cm;
+		margin-top:-0.3cm;
+	}
+	#bamua-combo{
+		position:relative;
+		display:flex;
+		margin-left:0.5cm;
+		margin-top:-0.3cm;
+		margin-right:0.5cm;
+	}
+	#bamua{
+		position:absolute;
+		height:0.6cm;
+		margin-top:0.2cm;
+	}
+	#p-bamua{
+		font-size:12px;
+		position:relative;
+		font-weight:bold;
+		margin-left:0.8cm;
+	}
+	#Col1-Top2{
+		background-color:white;
+		width:30vw;
+		height:auto;
+		border:1px solid lightgrey;
+		border-radius:10px;
+		margin-top:0.4cm;
+		display:grid;
+		grid-template-areas:"Prefe"
+		"Job"
+		"hr"
+		"Post";
+		grid-template-rows:2cm 1cm 0.4cm 1.7cm;
+	}
+	#Col1-Top2 a{
+		position:relative;
+		color:black;
+		text-decoration:none;
+	}
+	#Col1-Top2 #Prefe{
+		position:relative;
+		margin-left:0.5cm;
+		display:flex;
+		margin-top:0.7cm;
+		grid-area:Prefe;
+	}
+	#Col1-Top2 span{
+		position:relative;
+		font-size:15px;
+		font-weight:bold;
+		margin-left:0.2cm;
+		margin-top:0.1cm;
+	}
+	#Col1-Top2 #Job{
+		position:relative;
+		margin-left:0.5cm;
+		grid-area:Job;
+		display:flex;
+	}
+	#Col1-Top2 #hr{
+		position:relative;
+		grid-area:hr;
+		width:93%;
+	}
+	#Col1-Top2 #Post{
+		position:relative;
+		grid-area:Post;
+		display:flex;
+		margin-left:0.5cm;
+		margin-top:0.3cm;
+		color:blue;
+	}
+	#Col2-Top1{
+		background-color:white;
+		width:55vw;
+		height:auto;
+		margin-left:0.5cm;
+		border:1px solid lightgrey;
+		border-radius:10px;
+		margin-top:0.4cm;
+		padding-bottom:0.4cm;
+	}
+	#Col2-Top1 > h2{
+		position:relative;
+		font-size:20px;
+		margin-top:0.7cm;
+		margin-left:0.7cm;
+	}
+	#Col2-Top1 > p{
+		position:relative;
+		color:grey;
+		font-size:14px;
+		margin-left:0.7cm;
+		margin-top:-0.3cm;
+	}
+	#Col2-Top{
+		position:relative;
+		margin-top:0cm;
+	}
+	#Col2-Top #Col2-Top1-top1{
+		position:relative;
+		display:flex;
+		margin-left:0.6cm;
+		margin-top:-0.5cm;
+		
+	}
+	#arrow{
+		position:relative;
+		height:50px;
+		width:50px;
+		margin-top:0.5cm;
+	}
+	#app{
+		position:relative;
+		font-size:15px;
+		color:#1560BD;
+		font-weight:bold;
+	}
+	#app > span{
+		position:relative;
+		color:black;
+	}
+	#content{
+		margin-left:0.5cm;
+		position:relative;
+	}
+	#Col2-Top a{
+		position:relative;
+		text-decoration:none;
+		display:flex;
+		justify-content:space-between;
+		margin-bottom:-0.7cm;
+	}
+	#content > #acc{
+		position:relative;
+		font-size:14px;
+		color:black;
+		margin-top:-0.3cm;
+	}
+	#content > #be{
+		position:relative;
+		font-size:12px;
+		color:grey;
+		margin-top:-0.3cm;
+	}
+	#be > span{
+		position:relative;
+		font-size:12px;
+		color:darkgreen;
+	}
+	#Col2-Top1 > #Col2-Top > a > #cross{
+		color:black;
+		position:relative;
+		margin-right:0.8cm;
+	}
+	#show{
+		
+	}
+	#Col2-Top1 > #show{
+		text-decoration:none;
+		color:black;
+	}
+	#Col2-Top2{
+		position:relative;
+		background-color:white;
+		width:55vw;
+		height:auto;
+		margin-left:0.5cm;
+		border:1px solid lightgrey;
+		border-radius:10px;
+		margin-top:0.4cm;
+		padding-bottom:0.4cm;
+	}
+	#Col2-Top21{
+		position:absolute;
+		display:flex;
+		width:53vw;
+		border-radius:10px 10px 0px 0px;
+		justify-content:space-between;
+		
+	}
+	#Col2-Top211{
+		position:relative;
+	}
+	#Col2-Top211 h3{
+		position:relative;
+		margin-left:0.7cm;
+	}
+	#Col2-Top211 > p{
+		position:relative;
+		margin-top:-0.5cm;
+		font-size:14px;
+		margin-left:0.7cm;
+		color:grey;
+	}
+	#Col2-Top212{
+		position:relative;
+		display:grid;
+		gap:10px;
+		grid-template-areas:"left right";
+		margin-top:0.5cm;
+	}
+	#Col2-Top212 button{
+		position:relative;
+		border-radius:100px;
+		height:1cm;
+		width:1cm;
+		
+	}
+	#chevron-left-small{
+		position:relative;
+		grid-area:left;
+	}
+	#chevron-right-small{
+		position:relative;
+		grid-area:right;
+	}
+	#Col2-Top22{
+		display:flex;
+		position:relative;
+		width:53vw;
+		overflow-x:scroll;
+		scrollbar-width:none;
+		Scrollbar-color:black;
+	}
+	#slide1{
+		position:relative;
+		height:auto;
+		width:50vw;
+		border:1px solid lightgrey;
+		border-radius:10px;
+		margin-top:2cm;
+		margin-left:0.7cm;
+		padding-bottom:0.5cm;
+	}
+	#slide1-back{
+		background-image:url('https://media.licdn.com/dms/image/v2/C4D1BAQFgaxHxg5rPFQ/company-background_10000/company-background_10000/0/1598269491042/turck_cover?e=1779346800&v=beta&t=yefq-QbF1LM9OD4R2iF9W8Ki3skoO0oaMv27fBJZOeg');
+		background-repeat:no-repeat;
+		background-size:cover;
+		height:1.8cm;
+		border-radius:10px 10px 0px 0px;
+	}
+	#slide1-profi{
+		position:relative;
+		height:2cm;
+		width:2cm;
+		border-radius:5px;
+		margin-left:0.3cm;
+		margin-top:0.3cm;
+	}
+	#slide1 > button{
+		position:relative;
+		margin-left:27vw;
+		border:none;
+		background-color:white;
+	}
+	#three{
+		position:relative;
+		height:0.4cm;
+	}
+	#slide1 span{
+		position:relative;
+		width:1cm;
+	}
+	#Turck{
+		position:relative;
+		margin-left:0.4cm;
+	}
+	#Turck h3{
+		position:relative;
+		font-size:17px;
+	}
+	#Turck p{
+		position:relative;
+		font-size:12px;
+		color:grey;
+		margin-top:-0.3cm;
+	}
+	#Turck-box{
+		position:relative;
+		font-size:12px;
+		width:26.8vw;
+		background-color:#F3F0E8;
+		border:1px solid grey;
+		border-radius:10px;
+		margin-left:0.44cm;
+	}
+	#Turck-box > p{
+		position:relative;
+		font-weight:bold;
+		margin-left:0.25cm;
+	}
+	#Turck-all-p > #Turck-all-p-1p{
+		position:relative;
+		margin-top:-0.1cm;
+	}
+	#Turck-all-p > p{
+		position:relative;
+		color:grey;
+		margin-left:0.25cm;
+		margin-top:-0.25cm;
+	}
+	#Col2-Top3{
+		position:relative;
+		background-color:white;
+		width:55vw;
+		height:auto;
+		margin-left:0.5cm;
+		border:1px solid lightgrey;
+		border-radius:10px;
+		margin-top:0.4cm;
+		padding-bottom:0.4cm;
+		right:0%;
+		overflow-x:hidden;
+	}
+	#Col2-Top3-top1{
+		position:relative;
+		display:grid;
+		left:4%;
+		grid-template-areas:"h3"
+		"p";
+		grid-template-rows:0.8cm 1.3cm;
+	}
+	#Col2-Top3-top1 h3{
+		grid-area:h3;
+	}
+	#Col2-Top3-top1 p{
+		grid-area:p;
+		font-size:13px;
+		color:grey;
+	}
+	.Col2-Top3-top2{
+		position:relative;
+	}
+	.Col2-Top1-top1{
+		position:relative;
+		display:flex;
+		margin-left:0.6cm;
+	}
+	.arrow{
+		position:relative;
+		height:50px;
+		width:50px;
+		margin-top:0.5cm;
+		border-radius:5px;
+	}
+	.app{
+		position:relative;
+		font-size:15px;
+		color:#1560BD;
+		font-weight:bold;
+	}
+	.app > span{
+		position:relative;
+		color:black;
+	}
+	.content{
+		margin-left:0.5cm;
+		position:relative;
+	}
+	.Col2-Top3-top2 a{
+		position:relative;
+		text-decoration:none;
+		display:flex;
+		justify-content:space-between;
+		margin-Top:-0.9cm;
+	}
+	.content > .acc{
+		position:relative;
+		font-size:14px;
+		color:black;
+		margin-top:-0.3cm;
+	}
+	.content > .be{
+		position:relative;
+		font-size:12px;
+		color:grey;
+		margin-top:-0.3cm;
+	}
+	.be > span{
+		position:relative;
+		font-size:12px;
+		color:darkgreen;
+	}
+	.cross{
+		color:black;
+		position:relative;
+		margin-right:0.8cm;
+		margin-top:1cm;
+	}
+	.Col2-Top3-top2 .hr{
+		position:relative;
+		width:93vw;
+		margin-top:-0.5cm;
+	}
+	
+	
+	
+}	/*min-width:990px*/
+
+/*Column1*/
+@media screen and (max-width:990px){
+	#Skills{
+		display:flex;
+		justify-content:around;
+		margin-top:2cm;
+		font-family: 'Noto Sans', sans-serif;
+		margin-left:8vw;
+	}
+	#Column1{
+		position:relative;
+		margin-top:0.5cm;
+	}
+	#Col1-Top1{
+		background-color:white;
+		width:30vw;
+		height:auto;
+		border:1px solid lightgrey;
+		border-radius:10px;
+	}
+	#Nav-section{
+		position:relative;
+		padding-top:0.2cm;
+	}
+	#v-profi{
+		border-radius:100px;
+		position:relative;
+		height:2.1cm;
+		margin-left:0.5cm;
+		margin-right:0.5cm;
+		margin-top:1cm;
+	}
+	#back{
+		background-image:url('https://wallpapers.com/images/featured/profile-background-b5vedq7mz8mjvslu.jpg');
+		background-repeat:no-repeat;
+		background-size:cover;
+		height:1.8cm;
+		border-radius:10px 10px 0px 0px;
+	}
+	#Col1-Top1 > h2{
+		position:relative;
+		margin-top:1.6cm;
+		font-size:19px;
+		margin-left:0.5cm;
+		margin-right:0.5cm;
+	}
+	#Col1-Top1 > #stu{
+		font-size:12px;
+		position:relative;
+		margin-left:0.5cm;
+		margin-top:-0.4cm;
+		margin-right:0.5cm;
+	}
+	#Col1-Top1 > #pune{
+		font-size:12px;
+		position:relative;
+		color:grey;
+		margin-left:0.5cm;
+		margin-right:0.5cm;
+		margin-top:-0.3cm;
+	}
+	#bamua-combo{
+		position:relative;
+		display:flex;
+		margin-left:0.5cm;
+		margin-top:-0.3cm;
+		margin-right:0.5cm;
+	}
+	#bamua{
+		position:absolute;
+		height:0.6cm;
+		margin-top:0.2cm;
+	}
+	#p-bamua{
+		font-size:12px;
+		position:relative;
+		font-weight:bold;
+		margin-left:0.8cm;
+	}
+	#Col1-Top2{
+		background-color:white;
+		width:30vw;
+		height:auto;
+		border:1px solid lightgrey;
+		border-radius:10px;
+		margin-top:0.4cm;
+		display:grid;
+		grid-template-areas:"Prefe"
+		"Job"
+		"hr"
+		"Post";
+		grid-template-rows:2cm 1cm 0.4cm 1.7cm;
+	}
+	#Col1-Top2 a{
+		position:relative;
+		color:black;
+		text-decoration:none;
+	}
+	#Col1-Top2 #Prefe{
+		position:relative;
+		margin-left:0.5cm;
+		display:flex;
+		margin-top:0.7cm;
+		grid-area:Prefe;
+	}
+	#Col1-Top2 span{
+		position:relative;
+		font-size:15px;
+		font-weight:bold;
+		margin-left:0.2cm;
+		margin-top:0.1cm;
+	}
+	#Col1-Top2 #Job{
+		position:relative;
+		margin-left:0.5cm;
+		grid-area:Job;
+		display:flex;
+	}
+	#Col1-Top2 #hr{
+		position:relative;
+		grid-area:hr;
+		width:93%;
+	}
+	#Col1-Top2 #Post{
+		position:relative;
+		grid-area:Post;
+		display:flex;
+		margin-left:0.5cm;
+		margin-top:0.3cm;
+		color:blue;
+	}
+	#Col2-Top1{
+		background-color:white;
+		width:50vw;
+		height:auto;
+		margin-left:0.5cm;
+		border:1px solid lightgrey;
+		border-radius:10px;
+		margin-top:0.4cm;
+		padding-bottom:0.4cm;
+	}
+	#Col2-Top1 > h2{
+		position:relative;
+		font-size:20px;
+		margin-top:0.7cm;
+		margin-left:0.7cm;
+	}
+	#Col2-Top1 > p{
+		position:relative;
+		color:grey;
+		font-size:14px;
+		margin-left:0.7cm;
+		margin-top:-0.3cm;
+	}
+	#Col2-Top{
+		position:relative;
+		margin-top:0cm;
+	}
+	#Col2-Top #Col2-Top1-top1{
+		position:relative;
+		display:flex;
+		margin-left:0.6cm;
+		margin-top:-0.5cm;
+		
+	}
+	#arrow{
+		position:relative;
+		height:50px;
+		width:50px;
+		margin-top:0.5cm;
+	}
+	#app{
+		position:relative;
+		font-size:15px;
+		color:#1560BD;
+		font-weight:bold;
+	}
+	#app > span{
+		position:relative;
+		color:black;
+	}
+	#content{
+		margin-left:0.5cm;
+		position:relative;
+	}
+	#Col2-Top a{
+		position:relative;
+		text-decoration:none;
+		display:flex;
+		justify-content:space-between;
+		margin-bottom:-0.7cm;
+	}
+	#content > #acc{
+		position:relative;
+		font-size:14px;
+		color:black;
+		margin-top:-0.3cm;
+	}
+	#content > #be{
+		position:relative;
+		font-size:12px;
+		color:grey;
+		margin-top:-0.3cm;
+	}
+	#be > span{
+		position:relative;
+		font-size:12px;
+		color:darkgreen;
+	}
+	#Col2-Top1 > #Col2-Top > a > #cross{
+		color:black;
+		position:relative;
+		margin-right:0.8cm;
+	}
+	#show{
+		
+	}
+	#Col2-Top1 > #show{
+		text-decoration:none;
+		color:black;
+	}
+	#Col2-Top2{
+		position:relative;
+		background-color:white;
+		width:50vw;
+		height:auto;
+		margin-left:0.5cm;
+		border:1px solid lightgrey;
+		border-radius:10px;
+		margin-top:0.4cm;
+		padding-bottom:0.4cm;
+	}
+	#Col2-Top21{
+		position:absolute;
+		display:flex;
+		width:50vw;
+		border-radius:10px 10px 0px 0px;
+		justify-content:space-between;
+		
+	}
+	#Col2-Top211{
+		position:relative;
+	}
+	#Col2-Top211 h3{
+		position:relative;
+		margin-left:0.7cm;
+	}
+	#Col2-Top211 > p{
+		position:relative;
+		margin-top:-0.5cm;
+		font-size:14px;
+		margin-left:0.7cm;
+		color:grey;
+	}
+	#Col2-Top212{
+		position:relative;
+		display:grid;
+		gap:10px;
+		grid-template-areas:"left right";
+		padding-right:0.7cm;
+		margin-top:0.5cm;
+		
+	}
+	#Col2-Top212 button{
+		position:relative;
+		border-radius:100px;
+		height:1cm;
+		width:1cm;
+		
+	}
+	#chevron-left-small{
+		position:relative;
+		grid-area:left;
+	}
+	#chevron-right-small{
+		position:relative;
+		grid-area:right;
+	}
+	#Col2-Top22{
+		display:flex;
+		position:relative;
+		width:48vw;
+		overflow-x:scroll;
+		scrollbar-width:none;
+		Scrollbar-color:black;
+	}
+	#slide1{
+		position:relative;
+		height:auto;
+		width:39vw;
+		border:1px solid lightgrey;
+		border-radius:10px;
+		margin-top:2cm;
+		margin-left:0.7cm;
+		padding-bottom:0.5cm;
+	}
+	#slide1-back{
+		background-image:url('https://media.licdn.com/dms/image/v2/C4D1BAQFgaxHxg5rPFQ/company-background_10000/company-background_10000/0/1598269491042/turck_cover?e=1779346800&v=beta&t=yefq-QbF1LM9OD4R2iF9W8Ki3skoO0oaMv27fBJZOeg');
+		background-repeat:no-repeat;
+		background-size:cover;
+		height:1.8cm;
+		border-radius:10px 10px 0px 0px;
+	}
+	#slide1-profi{
+		position:relative;
+		height:2cm;
+		width:2cm;
+		border-radius:5px;
+		margin-left:0.3cm;
+		margin-top:0.3cm;
+	}
+	#slide1 > button{
+		position:relative;
+		margin-left:33vw;
+		border:none;
+		background-color:white;
+	}
+	#three{
+		height:0.4cm;
+	}
+	#slide1 span{
+		position:relative;
+		width:1cm;
+	}
+	#Turck{
+		position:relative;
+		margin-left:0.4cm;
+	}
+	#Turck h3{
+		position:relative;
+		font-size:17px;
+	}
+	#Turck p{
+		position:relative;
+		font-size:12px;
+		color:grey;
+		margin-top:-0.3cm;
+	}
+	#Turck-box{
+		position:relative;
+		font-size:12px;
+		width:33vw;
+		background-color:#F3F0E8;
+		border:1px solid grey;
+		border-radius:10px;
+		margin-left:0.44cm;
+	}
+	#Turck-box > p{
+		position:relative;
+		font-weight:bold;
+		margin-left:0.25cm;
+	}
+	#Turck-all-p > #Turck-all-p-1p{
+		position:relative;
+		margin-top:-0.1cm;
+	}
+	#Turck-all-p > p{
+		position:relative;
+		color:grey;
+		margin-left:0.25cm;
+		margin-top:-0.25cm;
+	}
+	#Col2-Top3{
+		position:relative;
+		background-color:white;
+		width:50vw;
+		height:auto;
+		margin-left:0.5cm;
+		border:1px solid lightgrey;
+		border-radius:10px;
+		margin-top:0.4cm;
+		padding-bottom:0.4cm;
+		right:0%;
+		overflow-x:hidden;
+	}
+	#Col2-Top3-top1{
+		position:relative;
+		display:grid;
+		left:4%;
+		grid-template-areas:"h3"
+		"p";
+		grid-template-rows:0.8cm 1.3cm;
+	}
+	#Col2-Top3-top1 h3{
+		grid-area:h3;
+	}
+	#Col2-Top3-top1 p{
+		grid-area:p;
+		font-size:13px;
+		color:grey;
+	}
+	.Col2-Top3-top2{
+		position:relative;
+	}
+	.Col2-Top1-top1{
+		position:relative;
+		display:flex;
+		margin-left:0.6cm;
+	}
+	.arrow{
+		position:relative;
+		height:50px;
+		width:50px;
+		margin-top:0.5cm;
+		border-radius:5px;
+	}
+	.app{
+		position:relative;
+		font-size:15px;
+		color:#1560BD;
+		font-weight:bold;
+	}
+	.app > span{
+		position:relative;
+		color:black;
+	}
+	.content{
+		margin-left:0.5cm;
+		position:relative;
+	}
+	.Col2-Top3-top2 a{
+		position:relative;
+		text-decoration:none;
+		display:flex;
+		justify-content:space-between;
+		margin-Top:-0.9cm;
+	}
+	.content > .acc{
+		position:relative;
+		font-size:14px;
+		color:black;
+		margin-top:-0.3cm;
+	}
+	.content > .be{
+		position:relative;
+		font-size:12px;
+		color:grey;
+		margin-top:-0.3cm;
+	}
+	.be > span{
+		position:relative;
+		font-size:12px;
+		color:darkgreen;
+	}
+	.cross{
+		color:black;
+		position:relative;
+		margin-right:0.8cm;
+		margin-top:1cm;
+	}
+	.Col2-Top3-top2 .hr{
+		position:relative;
+		width:93vw;
+		margin-top:-0.5cm;
+	}
+	
+	
+	
+}	/*max-width:990px*/
+
+/*Column1*/
+@media screen and (max-width:770px){
+	#Skills{
+		display:flex;
+		justify-content:around;
+		flex-direction:column;
+		font-family: 'Noto Sans', sans-serif;
+		margin-left:0vw;
+	}
+	#Column1{
+		position:relative;
+		margin-top:0.5cm;
+	}
+	#Col1-Top1{
+		background-color:white;
+		width:104vw;
+		height:auto;
+		margin-left:-0.2cm;
+		border:1px solid lightgrey;
+		border-radius:10px;
+	}
+	#Nav-section{
+		position:relative;
+		padding-top:0.2cm;
+	}
+	#v-profi{
+		border-radius:100px;
+		position:relative;
+		height:2.1cm;
+		margin-left:0.5cm;
+		margin-top:1cm;
+	}
+	#back{
+		background-image:url('https://wallpapers.com/images/featured/profile-background-b5vedq7mz8mjvslu.jpg');
+		background-repeat:no-repeat;
+		background-size:cover;
+		height:1.8cm;
+		border-radius:10px 10px 0px 0px;
+	}
+	#Col1-Top1 > h2{
+		position:relative;
+		margin-top:1.6cm;
+		font-size:19px;
+		margin-left:0.5cm;
+	}
+	#Col1-Top1 > #stu{
+		font-size:12px;
+		position:relative;
+		margin-left:0.5cm;
+		margin-top:-0.4cm;
+	}
+	#Col1-Top1 > #pune{
+		font-size:12px;
+		position:relative;
+		color:grey;
+		margin-left:0.5cm;
+		margin-top:-0.3cm;
+	}
+	#bamua-combo{
+		position:relative;
+		display:flex;
+		margin-left:0.5cm;
+		margin-top:-0.3cm;
+	}
+	#bamua{
+		position:absolute;
+		height:0.6cm;
+		margin-top:0.2cm;
+	}
+	#p-bamua{
+		font-size:12px;
+		position:relative;
+		font-weight:bold;
+		margin-left:0.8cm;
+	}
+	#Col1-Top2{
+		background-color:white;
+		width:104vw;
+		height:auto;
+		margin-left:-0.2cm;
+		border:1px solid lightgrey;
+		border-radius:10px;
+		margin-top:0.4cm;
+		display:grid;
+		grid-template-areas:"Prefe"
+		"Job"
+		"hr"
+		"Post";
+		grid-template-rows:2cm 1cm 0.4cm 1.7cm;
+	}
+	#Col1-Top2 a{
+		position:relative;
+		color:black;
+		text-decoration:none;
+	}
+	#Col1-Top2 #Prefe{
+		position:relative;
+		margin-left:0.5cm;
+		display:flex;
+		margin-top:0.7cm;
+		grid-area:Prefe;
+	}
+	#Col1-Top2 span{
+		position:relative;
+		font-size:15px;
+		font-weight:bold;
+		margin-left:0.2cm;
+		margin-top:0.1cm;
+	}
+	#Col1-Top2 #Job{
+		position:relative;
+		margin-left:0.5cm;
+		grid-area:Job;
+		display:flex;
+	}
+	#Col1-Top2 #hr{
+		position:relative;
+		grid-area:hr;
+		width:90%;
+	}
+	#Col1-Top2 #Post{
+		position:relative;
+		grid-area:Post;
+		display:flex;
+		margin-left:0.5cm;
+		margin-top:0.3cm;
+		color:blue;
+	}
+	#Col2-Top1{
+		background-color:white;
+		width:104vw;
+		height:auto;
+		margin-left:-0.2cm;
+		border:1px solid lightgrey;
+		border-radius:10px;
+		margin-top:0.4cm;
+		padding-bottom:0.4cm;
+	}
+	#Col2-Top1 > h2{
+		position:relative;
+		font-size:20px;
+		margin-top:0.7cm;
+		margin-left:0.7cm;
+	}
+	#Col2-Top1 > p{
+		position:relative;
+		color:grey;
+		font-size:14px;
+		margin-left:0.7cm;
+		margin-top:-0.3cm;
+	}
+	#Col2-Top{
+		position:relative;
+		margin-top:0cm;
+	}
+	#Col2-Top #Col2-Top1-top1{
+		position:relative;
+		display:flex;
+		margin-left:0.6cm;
+		margin-top:-0.5cm;
+		
+	}
+	#arrow{
+		position:relative;
+		height:50px;
+		width:50px;
+		margin-top:0.5cm;
+	}
+	#app{
+		position:relative;
+		font-size:15px;
+		color:#1560BD;
+		font-weight:bold;
+	}
+	#app > span{
+		position:relative;
+		color:black;
+	}
+	#content{
+		margin-left:0.5cm;
+		position:relative;
+	}
+	#Col2-Top a{
+		position:relative;
+		text-decoration:none;
+		display:flex;
+		justify-content:space-between;
+		margin-bottom:-0.7cm;
+	}
+	#content > #acc{
+		position:relative;
+		font-size:14px;
+		color:black;
+		margin-top:-0.3cm;
+	}
+	#content > #be{
+		position:relative;
+		font-size:12px;
+		color:grey;
+		margin-top:-0.3cm;
+	}
+	#be > span{
+		position:relative;
+		font-size:12px;
+		color:darkgreen;
+	}
+	#Col2-Top1 > #Col2-Top > a > #cross{
+		color:black;
+		position:relative;
+		margin-right:0.8cm;
+	}
+	#Col2-Top1 > #show{
+		text-decoration:none;
+		color:black;
+	}
+	#Col2-Top2{
+		position:relative;
+		background-color:white;
+		width:104vw;
+		height:auto;
+		margin-left:-0.2cm;
+		border:1px solid lightgrey;
+		border-radius:10px;
+		margin-top:0.4cm;
+		padding-bottom:0.4cm;
+	}
+	#Col2-Top21{
+		position:absolute;
+		display:flex;
+		width:100vw;
+		border-radius:10px 10px 0px 0px;
+		justify-content:space-between;
+		
+	}
+	#Col2-Top211{
+		position:relative;
+	}
+	#Col2-Top211 h3{
+		position:relative;
+		margin-left:0.7cm;
+	}
+	#Col2-Top211 > p{
+		position:relative;
+		margin-top:-0.5cm;
+		font-size:14px;
+		margin-left:0.7cm;
+		color:grey;
+	}
+	#Col2-Top212{
+		position:relative;
+		display:grid;
+		gap:10px;
+		grid-template-areas:"left right";
+		padding-right:0.1cm;
+		margin-top:0.5cm;
+	}
+	#Col2-Top212 button{
+		position:relative;
+		border-radius:100px;
+		height:1cm;
+		width:1cm;
+	}
+	#chevron-left-small{
+		position:relative;
+		grid-area:left;
+	}
+	#chevron-right-small{
+		position:relative;
+		grid-area:right;
+	}
+	#Col2-Top22{
+		display:flex;
+		position:relative;
+		width:100vw;
+		overflow-x:scroll;
+		scrollbar-width:none;
+		Scrollbar-color:black;
+	}
+	#slide1{
+		position:relative;
+		height:auto;
+		width:50vw;
+		border:1px solid lightgrey;
+		border-radius:10px;
+		margin-top:2cm;
+		margin-left:0.8cm;
+		padding-bottom:0.5cm;
+	}
+	#slide1-back{
+		background-image:url('https://media.licdn.com/dms/image/v2/C4D1BAQFgaxHxg5rPFQ/company-background_10000/company-background_10000/0/1598269491042/turck_cover?e=1779346800&v=beta&t=yefq-QbF1LM9OD4R2iF9W8Ki3skoO0oaMv27fBJZOeg');
+		background-repeat:no-repeat;
+		background-size:cover;
+		height:1.8cm;
+		border-radius:10px 10px 0px 0px;
+	}
+	#slide1-profi{
+		position:relative;
+		height:2cm;
+		width:2cm;
+		border-radius:5px;
+		margin-left:0.3cm;
+		margin-top:0.3cm;
+	}
+	#slide1 > button{
+		position:relative;
+		margin-left:38vw;
+		border:none;
+		margin-right:0.2cm;
+		background-color:white;
+	}
+	#three{
+		height:0.4cm;
+	}
+	#slide1 span{
+		position:relative;
+		width:1cm;
+	}
+	#Turck{
+		position:relative;
+		margin-left:0.4cm;
+	}
+	#Turck h3{
+		position:relative;
+		font-size:17px;
+	}
+	#Turck p{
+		position:relative;
+		font-size:12px;
+		color:grey;
+		margin-top:-0.3cm;
+	}
+	#Turck-box{
+		position:relative;
+		font-size:12px;
+		width:39vw;
+		background-color:#F3F0E8;
+		border:1px solid grey;
+		border-radius:10px;
+		margin-left:0.44cm;
+	}
+	#Turck-box > p{
+		position:relative;
+		font-weight:bold;
+		margin-left:0.25cm;
+	}
+	#Turck-all-p > #Turck-all-p-1p{
+		position:relative;
+		margin-top:-0.1cm;
+	}
+	#Turck-all-p > p{
+		position:relative;
+		color:grey;
+		margin-left:0.25cm;
+		margin-top:-0.25cm;
+	}
+	#Col2-Top3{
+		position:relative;
+		background-color:white;
+		width:104vw;
+		height:auto;
+		margin-left:-0.2cm;
+		border:1px solid lightgrey;
+		border-radius:10px;
+		margin-top:0.4cm;
+		padding-bottom:0.4cm;
+		right:0%;
+		overflow-x:hidden;
+	}
+	#Col2-Top3-top1{
+		position:relative;
+		display:grid;
+		left:4%;
+		grid-template-areas:"h3"
+		"p";
+		grid-template-rows:0.8cm 1.3cm;
+	}
+	#Col2-Top3-top1 h3{
+		grid-area:h3;
+	}
+	#Col2-Top3-top1 p{
+		grid-area:p;
+		font-size:13px;
+		color:grey;
+	}
+	.Col2-Top3-top2{
+		position:relative;
+	}
+	.Col2-Top1-top1{
+		position:relative;
+		display:flex;
+		margin-left:0.6cm;
+	}
+	.arrow{
+		position:relative;
+		height:50px;
+		width:50px;
+		margin-top:0.5cm;
+		border-radius:5px;
+	}
+	.app{
+		position:relative;
+		font-size:15px;
+		color:#1560BD;
+		font-weight:bold;
+	}
+	.app > span{
+		position:relative;
+		color:black;
+	}
+	.content{
+		margin-left:0.5cm;
+		position:relative;
+	}
+	.Col2-Top3-top2 a{
+		position:relative;
+		text-decoration:none;
+		display:flex;
+		justify-content:space-between;
+		margin-Top:-0.9cm;
+	}
+	.content > .acc{
+		position:relative;
+		font-size:14px;
+		color:black;
+		margin-top:-0.3cm;
+	}
+	.content > .be{
+		position:relative;
+		font-size:12px;
+		color:grey;
+		margin-top:-0.3cm;
+	}
+	.be > span{
+		position:relative;
+		font-size:12px;
+		color:darkgreen;
+	}
+	.cross{
+		color:black;
+		position:relative;
+		margin-right:0.8cm;
+		margin-top:1cm;
+	}
+	.Col2-Top3-top2 .hr{
+		position:relative;
+		width:93vw;
+		margin-top:-0.5cm;
+	}
+									
+	
+	
+}
